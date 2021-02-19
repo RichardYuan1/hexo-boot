@@ -28,7 +28,7 @@ public class HexoBootApplication extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(HexoBootApplication.class);
     }
-//test++1
+//test++1+2
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(HexoBootApplication.class, args);
         log.info("访问地址：http://{}:{}/", IpUtil.getHostIp(), context.getEnvironment().getProperty("server.port"));
